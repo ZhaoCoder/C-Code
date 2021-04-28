@@ -1,0 +1,3 @@
+﻿  game.c
+LINK : fatal error LNK1168: 无法打开 C:\Users\15191107746\Desktop\vs-bit-code\test-4-24-扫雷\Debug\test-4-24-扫雷.exe 进行写入
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(876,5): error MSB6006: “link.exe”已退出，代码为 1168。
