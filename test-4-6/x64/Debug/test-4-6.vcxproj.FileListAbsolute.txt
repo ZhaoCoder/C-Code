@@ -1,0 +1,2 @@
+D:\vs-bit-code\test-4-6\x64\Debug\test-4-6.exe
+D:\vs-bit-code\test-4-6\x64\Debug\test-4-6.pdb
