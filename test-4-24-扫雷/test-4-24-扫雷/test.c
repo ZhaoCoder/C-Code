@@ -2,6 +2,7 @@
 #include"game.h"
 void game()
 {
+	int count = 0;
 	//真正扫雷的过程
 	//两个数组存放数据，一个数组mine存放布置雷，另一个show数组存放所排除雷周围的雷的信息
 	char mine[ROWS][COLS] = { 0 };
@@ -11,11 +12,8 @@ void game()
 	InitBoard(mine, ROWS, COLS,'0');//是雷字符'1',不是雷'0'
 	//布置好的雷不能打印
 	InitBoard(show, ROWS, COLS,'*');//*表示还没有排查
-	DisplayBoard(show, ROW, COL);
-	//1.布置雷 - 数据的存储--->9*9二维数组
-	SetMine(mine, ROW, COL);//我们布置雷只给里面的9*9布置，所以传9*9就可以了
-	//2.扫雷
-	FindMine(mine, show, ROW, COL);
+	Choose(mine,show);
+	//DisplayBoard(show, ROW, COL);
 }	
 //初始化mine数组
 void menu()
@@ -24,8 +22,8 @@ void menu()
 	printf("************1.play***********\n");
 	printf("************0.exit***********\n");
 	printf("*****************************\n");
-
 }
+
 int main()
 {
 	int input = 0;
